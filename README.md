@@ -12,8 +12,17 @@ The objective of this project is to propose a pipeline and a model that can clas
 
 ### 1.1 Sources
 
-Dataset : <Nom du dataset>  
-Link : <Lien vers le dataset> 
+Dataset : Figshare Brain Tumor Dataset  
+Link : https://www.kaggle.com/datasets/denizkavi1/brain-tumor/data
+
+Dataset :  Brain Tumor MRI Dataset
+Link : https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+
+Dataset : Multi-Cancer Dataset (Brain Subset)
+Link : https://www.kaggle.com/datasets/obulisainaren/multi-cancer
+
+Dataset : Brain Tumor MRI Scans (Kaggle)
+Link : https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans
 
 ### 1.2 Preprocessing
 - resize
@@ -26,7 +35,28 @@ Link : <Lien vers le dataset>
 ## 2. Structure of the project
 
 ```
-to do
+BRAIN_TUMOR_CLASSIFICATION/
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+|
+├── graphics/
+│
+├── notebooks/
+│ ├── figures/
+│ └── eda_dataset.ipynb
+│
+├── src/
+│ ├── preprocessing/
+│ │ └── preprocessing.py
+│ └── Brain_Tumor_Classification.ipynb
+│
+├── venv/
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 ---
 
@@ -103,3 +133,13 @@ Custom output path and image size:
 python preprocessing.py --input "../../data/raw/dataset" --output "../../data/processed/dataset_final" --size 224
 ```
 ---
+
+## 5. Brain Tumor Classification
+
+To fine-tune the models, you need to use this notebook:
+
+```bash
+src/Brain_Tumor_Classification.ipynb
+```
+
+You need to download it and open it directly on Google Colab in order to benefit from the computing power of this tool.
